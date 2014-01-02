@@ -1,4 +1,24 @@
 #!/usr/bin/env python
+# makekey.py - A key making tool
+# This program will accept a pin configuration for a Schalge 5 Pin lock and produce GCode to mill out the corresponding key.
+#
+# For example, this will produce a bump key:
+# $ ./makekey.py 99999
+#
+# This could produce a key to something else:
+# $ ./makekey.py 38457
+#
+# My dearest apologies if that happens to be yours.
+#
+# This is also a real key, as there does not exist a 'missing' pin:
+# $ ./makekey.py 00000
+#
+# Author: Torrie "tdfischer" Fischer <tdfischer@hackerbots.net>
+#
+# Made at Noisebridge 1/1/14 on visit from SYNHAK <3
+# https://noisebridge.net/wiki/Key_Milling
+#
+
 import sys
 
 # CONFIGURATION OPTIONS
